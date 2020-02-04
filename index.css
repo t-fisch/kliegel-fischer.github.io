@@ -464,7 +464,7 @@ margin-right: 30px;
             'cell-Sa cell-Sa';
     margin-left: 70px;
     grid-gap: 10px;
-    width: 60%;
+    width: 65%;
     }
 
     .sprechstunde-background{
@@ -485,6 +485,7 @@ margin-right: 30px;
         border: none; 
         text-align: center; 
         border-radius: 20px;
+        margin-top: 20px;
         padding: 10px 15px;
         text-decoration: none;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
