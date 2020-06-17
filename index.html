@@ -23,14 +23,19 @@
                     <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-therapie" >Therapie</a>
                     <a class= "linkanimation" onclick="myFunction()" href="index.html" >Aktuelles</a>   
             </div>
-
+            <p id="screensize"></p>
             <script>
                 function myFunction() {
+                    var z = screen.width; 
+                    document.getElementById("screensize").innerHTML = z;
+                    console.log(z);
+                    if(z <= 440){
                     var x = document.getElementById("nav-bar");
                     if (x.className === "navbar") {
                         x.className += "responsive";
                     } else {
                         x.className = "navbar";
+                    }
                     }
                 }
                 function onClick() {
@@ -45,13 +50,17 @@
     <div class="container-intro">
             <div class="cell cell-1">
                <div class= "slideshow">
-                    <img class="picture" src="picutres/Roulette.jpg">
-                    <img class="picture" src="picutres/Roulette_1.jpg">
-                    <img class="picture" src="picutres/Roulette_2.jpg">
-                    <img class="picture" src="picutres/Roulette_3.jpg">
-                    <img class="picture" src="picutres/Roulette_4.jpg">
-                    <img class="picture" src="picutres/Roulette_5.jpg">   
-                    <img class="picture" src="picutres/Roulette_6.jpg">                                                        
+                    <img class="picture" src="picutres/Roulette_new/01_Haus.jpg">
+                    <img class="picture" src="picutres/Roulette_new/02_rezeption.jpg">
+                    <img class="picture" src="picutres/Roulette_new/03_Warten3.jpg">
+                    <img class="picture" src="picutres/Roulette_new/04_Warten1.jpg">
+                    <img class="picture" src="picutres/Roulette_new/05_Warten2.jpg">
+                    <img class="picture" src="picutres/Roulette_new/06_U2.jpg">   
+                    <img class="picture" src="picutres/Roulette_new/07_Sued.jpg">  
+                    <img class="picture" src="picutres/Roulette_new/08_U1.jpg">
+                    <img class="picture" src="picutres/Roulette_new/09_West.png">
+                    <img class="picture" src="picutres/Roulette_new/10_Ost.png">   
+                    <img class="picture" src="picutres/Roulette_new/11_Door.png">                                                        
                 </div> 
             </div>
             <div class="cell cell-2">
@@ -197,7 +206,7 @@
     </div>
 
     <div class="button-termin-box">
-    <button class="button-termin"> <a class="telefonnummer" id="btn-tel" href="tel:+496306701077">  Termin vereinbaren  </a></button>
+    <button class="button-termin" id="button-termin-resp"> <a class="telefonnummer" id="btn-tel" href="tel:+496306701077">  Termin vereinbaren  </a></button>
     </div>
 
     <div class="dividerTeam">
@@ -211,32 +220,29 @@
         </div>
         <div class= 'cellT'>
             <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Schlachter_rund.png'>
-            <h4>Frau Schlachter</h4>
+            <h4>Anna Schlachter</h4>
         </div>
         <div class= 'cellT'>
             <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Melina_rund.png'>
-            <h4>Melina</h4>
+            <h4>Melina Gohlke</h4>
         </div>
         <div class= 'cellT'>
             <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Seibert_rund.png'>
-            <h4>Frau Seibert</h4>
+            <h4>Diana Seibert</h4>
         </div>
         <div class= 'cellT'>
             <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Carina_Rund.png'>
-            <h4>Carina</h4>
+            <h4>Carina Yilmaz</h4>
         </div>
     </div>
 
     <div class="team-slideshow">
-        <div class= "slideshow">
-            <div class= 'mitarb'>
-                <img class="mitarbeiter-pic" src="Bild2.png">
-                <h4 id="team-desc">Unser Team</h4>
-            </div>             
+        <div class= "slideshow-mitarb">
+                <img class="mitarbeiter-pic" src='picutres/Mitarbeiter/Christa_rund.png'>
+                <img class="mitarbeiter-pic" src='picutres/Mitarbeiter/Schlachter_rund.png'>
         </div> 
-
-
     </div>
+    
 
     <div class="dividerKontakt">
             <h2 class="text-divider" id= "anchor-Kontakt">Kontakt</h2>
