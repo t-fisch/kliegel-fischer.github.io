@@ -17,11 +17,11 @@
  <div class='nav-bck-img'>
     <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png"></a>
             <div class="navbar" id="nav-bar">       
-                    <a class= "linkanimation" href="index.html#anchor-Kontakt" id= "nav-kontakt" >Kontakt</a> 
-                    <a class= "linkanimation" href="index.html#anchor-team" >Team</a>  
-                    <a class= "linkanimation" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
-                    <a class= "linkanimation" href="index.html#anchor-therapie" >Therapie</a>
-                    <a class= "linkanimation" href="index.html" >Aktuelles</a>   
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-Kontakt" id= "nav-kontakt" >Kontakt</a> 
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-team" >Team</a>  
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-therapie" >Therapie</a>
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html" >Aktuelles</a>   
             </div>
 
             <script>
@@ -33,6 +33,10 @@
                         x.className = "navbar";
                     }
                 }
+                function onClick() {
+                    var x = document.getElementById("nav-bar");
+                    x.className = "navbar";
+                }
             </script>
 </div>   
 
@@ -41,10 +45,13 @@
     <div class="container-intro">
             <div class="cell cell-1">
                <div class= "slideshow">
-                    <img class="picture" src="Bild1.png">
-                    <img class="picture" src="Bild2.png">
-                    <img class="picture" src="Bild3.png">
-                    <img class="picture" src="Bild4.png">
+                    <img class="picture" src="picutres/Roulette.jpg">
+                    <img class="picture" src="picutres/Roulette_1.jpg">
+                    <img class="picture" src="picutres/Roulette_2.jpg">
+                    <img class="picture" src="picutres/Roulette_3.jpg">
+                    <img class="picture" src="picutres/Roulette_4.jpg">
+                    <img class="picture" src="picutres/Roulette_5.jpg">   
+                    <img class="picture" src="picutres/Roulette_6.jpg">                                                        
                 </div> 
             </div>
             <div class="cell cell-2">
@@ -199,28 +206,24 @@
 
     <div class= 'container-team'>
         <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='mitarbeiter1.png'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Christa_rund.png'>
             <h4>Dr. Christa Kliegel-Fischer</h4>
         </div>
         <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='/pictures/Mitarbeiter/Schlachter_rund.png'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Schlachter_rund.png'>
             <h4>Frau Schlachter</h4>
         </div>
         <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='mitarbeiter3.png'>
-            <h4>Mitarbeiter2</h4>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Melina_rund.png'>
+            <h4>Melina</h4>
         </div>
         <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='mitarbeiter4.png'>
-            <h4>Mitarbeiter3</h4>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Seibert_rund.png'>
+            <h4>Frau Seibert</h4>
         </div>
         <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='mitarbeiter5.png'>
-            <h4>Mitarbeiter4</h4>
-        </div>
-        <div class= 'cellT'>
-            <img class= 'mitarbeiter-pic' src='mitarbeiter6.png'>
-            <h4>Mitarbeiter5</h4>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Carina_Rund.png'>
+            <h4>Carina</h4>
         </div>
     </div>
 
