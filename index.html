@@ -143,7 +143,7 @@
             </a>
         </div>
         <div class='cellm cell-wei'>
-f            <a class= "button" href="weitereMethoden.html">
+            <a class= "button" href="weitereMethoden.html">
                 <img class="pic-meth" id="pic-weiter" src='weiter.svg'>
                 <h3 class="icon-text">Weitere Methoden</h3>
             </a>
@@ -239,9 +239,54 @@ f            <a class= "button" href="weitereMethoden.html">
 
     <div class="team-slideshow">
         <div class= "slideshow-mitarb">
-                <img class="mitarbeiter-pic" src='picutres/Mitarbeiter/Christa_rund.png'>
-                <img class="mitarbeiter-pic" src='picutres/Mitarbeiter/Schlachter_rund.png'>
-        </div> 
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Christa.png'>
+                    <h4 class="Subtitle-Mitarb">Dr. Christa Kliegel-Fischer</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Anna.png'>
+                    <h4 class="Subtitle-Mitarb">Anna Schlachter</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Melina.png'>
+                    <h4 class="Subtitle-Mitarb">Melina Gohlke</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Diana.png'>
+                    <h4 class="Subtitle-Mitarb">Diana Seibert</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Carina.png'>
+                    <h4 class="Subtitle-Mitarb">Carina Yilmaz</h4>
+                </div>
+            <div class="button-carusell-collection">
+            <button class="button-carusell button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-carusell button-right" onclick="plusDivs(+1)">&#10095;</button> 
+            </div>  
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mitarb-Mobile");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
     </div>
     
 

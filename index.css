@@ -351,6 +351,26 @@ margin-right: 30px;
     text-decoration-line: underline;
 }
 
+.button-carusell{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: lighter;
+    color: #705261;
+    border: 0px solid transparent;
+}
+.button-carusell-collection{
+    position: relative;
+    margin-top: -40%;
+    margin-bottom: 50%;
+}
+
+.button-left{
+    margin-left: 5%;
+}
+.button-right{
+    margin-left: 85%;
+}
+
 .cellm:hover h3{
     transform: scale(0.8);
 }
@@ -538,12 +558,16 @@ margin-right: 30px;
     #team-desc{
         position: center;
     }
-    .mitarbeiter-pic{
+    .mitarbeiter-pics{
     width: 60%;
     margin-bottom: 15px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    }
+
+    .Subtitle-Mitarb{
+        text-align: center;
     }
 
 }
