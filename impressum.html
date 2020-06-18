@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Praxis Dr. Christa Kliegel-Fischer</title>
+    <meta name="description" content="In der Kinderarztpraxis Dr. Kliegel-Fischer werden.....">
+    <meta name ="keywords" content="Kaiserslautern, Homöopathie, Kinderärzt, Akupuntur, Praxis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class='nav-bck-img'>
+        <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png"></a>
+                <div class="navbar" id="nav-bar">       
+                    <a class= "linkanimation" id= "nav-kontakt" href="index.html#anchor-Kontakt" >Kontakt</a> 
+                    <a class= "linkanimation" href="index.html#anchor-team" >Team</a>  
+                    <a class= "linkanimation" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
+                    <a class= "linkanimation" href="index.html#anchor-therapie" >Therapie</a>
+                    <a class= "linkanimation" href="index.html" >Aktuelles</a>   
+                </div>
+    
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("nav-bar");
+                        if (x.className === "navbar") {
+                        x.className += "responsive";
+                        } else {
+                        x.className = "navbar";
+                        }
+                    }
+                </script>
+    </div>
+
+</body>
+</html>
