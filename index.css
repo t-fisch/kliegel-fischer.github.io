@@ -123,7 +123,6 @@ h4{
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        text-align: center;
     }
     .icon {
       position: fixed;
@@ -693,4 +692,13 @@ margin-right: 30px;
 .impressum-link{
     text-decoration: none;
     color: black;
+}
+
+/*Schuldmedizin*/ 
+.impressum-content{
+    margin-top: 20%;
+    margin-left: 20%;
+}
+#impressum-title{
+    font-size: 15px;
 }
