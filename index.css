@@ -146,6 +146,35 @@ h4{
         display: none;
     }
 }
+
+/*logo*/
+    .logo_web{
+        position: relative;
+        padding-left: 5%;
+        z-index: 3;
+    }
+    .logo_mobile{
+        display: none;
+        position: absolute;
+    }
+
+    .logo_mobile_stick{
+        position: sticky;
+        top: 0;
+        z-index: 7;
+        margin: auto;
+        width: 50%;
+    }
+
+ @media (max-width: 440px){
+    .logo_mobile{
+        display: block;
+    }
+    .logo_web{
+        display: none;
+    }
+ }
+
 /*Divider*/ 
 .dividerMethod{
     margin-top: 70px;
@@ -696,9 +725,15 @@ margin-right: 30px;
 
 /*Impressum*/ 
 .impressum-content{
-    margin-top: 20%;
-    margin-left: 20%;
+    margin-top: 10%;
+    margin-left: 5%;
 }
 #impressum-title{
     font-size: 15px;
+}
+@media (max-width: 440px){
+    .impressum-content{
+        margin-top: 25%;
+        margin-left: 10%;
+    }
 }
