@@ -13,28 +13,48 @@
 </head>
 
 <body>
-
-    <div class='nav-bck-img'>
+    <div class="logo_mobile_stick">
+        <a class="logo_mobile" href="index.html"><img src="Logo/Logo_Mobile.png" 
+            style=  "height: auto; 
+                    z-index: 4; 
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 8px; 
+                    width: 60%;"></a>
+    </div>   
+    
+     <div class='nav-bck-img'>
         <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png"></a>
                 <div class="navbar" id="nav-bar">       
-                    <a class= "linkanimation" id= "nav-kontakt" href="index.html#anchor-Kontakt" >Kontakt</a> 
-                    <a class= "linkanimation" href="index.html#anchor-team" >Team</a>  
-                    <a class= "linkanimation" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
-                    <a class= "linkanimation" href="index.html#anchor-therapie" >Therapie</a>
-                    <a class= "linkanimation" href="index.html" >Aktuelles</a>   
+                        <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-Kontakt" id= "nav-kontakt" >Kontakt</a> 
+                        <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-team" >Team</a>  
+                        <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
+                        <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-therapie" >Therapie</a>
+                        <a class= "linkanimation" onclick="myFunction()" href="index.html" >Aktuelles</a>   
                 </div>
-        <a class="logo-web" onclick="myFunction()" href="index.html"><img id="logo_web" src="Logo/Logo_Web.png"></a>
+                <a class="logo_web" href="index.html"><img src="Logo/Logo_Web.png" style="max-width: 18%; height: auto; margin-top: -4rem; z-index: 4;"></a>
+                <p id="screensize"></p>
                 <script>
                     function myFunction() {
+                        var z = screen.width; 
+                        document.getElementById("screensize").innerHTML = z;
+                        console.log(z);
+                        if(z <= 440){
                         var x = document.getElementById("nav-bar");
                         if (x.className === "navbar") {
-                        x.className += "responsive";
+                            x.className += "responsive";
                         } else {
-                        x.className = "navbar";
+                            x.className = "navbar";
+                        }
                         }
                     }
+                    function onClick() {
+                        var x = document.getElementById("nav-bar");
+                        x.className = "navbar";
+                    }
                 </script>
-    </div>
+    </div>  
 
     <div class="impressum-content">
         <h3 id="impressum-title">Impressum</h3>
