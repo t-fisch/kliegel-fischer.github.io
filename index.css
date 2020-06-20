@@ -169,6 +169,7 @@ h4{
  @media (max-width: 440px){
     .logo_mobile{
         display: block;
+        position: relative;
     }
     .logo_web{
         display: none;
@@ -177,7 +178,7 @@ h4{
 
 /*Divider*/ 
 .dividerMethod{
-    margin-top: 70px;
+    margin-top: 40px;
     background-image: url('divider1.png');
     background-repeat: no-repeat;
     background-size: 500px 300px;
@@ -282,8 +283,6 @@ margin-right: 30px;
 }
 .intro{
     padding-left: 3%;
-    border:0px;
-    border-left:3px solid #705261;
 }
 #statement-pos{
     padding-top: 2%;
@@ -327,6 +326,35 @@ margin-right: 30px;
         display: block;
         padding-top: 100px;
         margin-left: 70px;
+    }
+}
+
+/*aktuelle new*/
+.picture_new{
+    width: 100%
+}
+.container-intro_new{
+    margin-top: 40px;
+}
+.slideshow_new{
+position: relative;
+}
+
+.intro_new{
+    padding-top: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+@media( max-width: 440px){
+    .intro_new{
+        padding-top: 5%;
+        width: 80%
+    }
+    .container-intro_new{
+        margin-top: 5px;
+        z-index: 1;
     }
 }
 

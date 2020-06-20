@@ -22,10 +22,9 @@
                 margin-right: auto;
                 margin-top: 8px; 
                 width: 60%;"></a>
-</div>   
-
+</div> 
  <div class='nav-bck-img'>
-    <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png"></a>
+    <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png"></a>  
             <div class="navbar" id="nav-bar">       
                     <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-Kontakt" id= "nav-kontakt" >Kontakt</a> 
                     <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-team" >Team</a>  
@@ -55,8 +54,8 @@
                 }
             </script>
 </div>  
-
-<h1 id="statement-resp"> Ganzheitlich betrachten <br>
+<!-- 
+    <h1 id="statement-resp"> Ganzheitlich betrachten <br>
     und Komplementäres verbinden. </h1>
     <div class="container-intro">
             <div class="cell cell-1">
@@ -86,6 +85,25 @@
             </div>
             </div>
     </div>
+-->
+
+<!-- new frist page -->
+
+<div class="container-intro_new">
+    <div class= "slideshow_new">
+        <img class="picture_new" src="picutres/Roulette_new2/01_haus.png">
+        <img class="picture_new" src="picutres/Roulette_new2/02_rezeption.png">
+        <img class="picture_new" src="picutres/Roulette_new2/03_warten.png">
+        <img class="picture_new" src="picutres/Roulette_new2/04_warten.png">
+        <img class="picture_new" src="picutres/Roulette_new2/05_warten.png">
+        <img class="picture_new" src="picutres/Roulette_new2/06_u-sued.png">   
+        <img class="picture_new" src="picutres/Roulette_new2/08_sued.png">  
+        <img class="picture_new" src="picutres/Roulette_new2/09_west.png">
+        <img class="picture_new" src="picutres/Roulette_new2/10_u_west.png">
+        <img class="picture_new" src="picutres/Roulette_new2/11_west.png">   
+        <img class="picture_new" src="picutres/Roulette_new2/12_door.png">                                                        
+    </div> 
+</div>
 
     <!-- JavaScript Code für Slideshow -->
     <script>
@@ -94,16 +112,25 @@
                     
             function carousel() {
             var i;
-            var x = document.getElementsByClassName("picture");
+            var x = document.getElementsByClassName("picture_new");
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";  
             }
             myIndex++;
             if (myIndex > x.length) {myIndex = 1}    
             x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000); // Change image every 2 seconds
+            setTimeout(carousel, 3000); // Change image every 1,5 seconds
             }
     </script>
+
+<div class="intro_new">
+    <h1> Ganzheitlich bewerten und Komplementäres verbinden. </h1>
+    <br>
+    <p>Kinder, Jugendliche und Erwachsene auf ihrem Lebensweg zu begleiten, ihre Entwicklung zu unterstützen, 
+    sie zu stärken und bei Erkrankungen auf sanfte und gute Art und Weise zu heilen ist unser wichtigstes Ziel. 
+    </p>
+    <br> 
+</div>
 
     <div class="dividerMethod">
         <h2 class="text-divider" id= "anchor-therapie">Therapiemethoden</h2>
