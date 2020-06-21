@@ -165,6 +165,9 @@ h4{
         margin: auto;
         width: 50%;
     }
+    .title_mobile{
+        display: none;
+    }
 
  @media (max-width: 440px){
     .logo_mobile{
@@ -173,6 +176,12 @@ h4{
     }
     .logo_web{
         display: none;
+    }
+    .title_mobile{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
  }
 
