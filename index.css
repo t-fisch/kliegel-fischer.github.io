@@ -348,15 +348,44 @@ margin-right: 30px;
 }
 .slideshow_new{
     position: relative;
+    transition: ease-in .6;
+}
+
+.pic-slideshow{
+    overflow: hidden;
+    height: 751px;
 }
 
 .intro_new{
-    padding-top: 10px;
+    padding-top: 40px;
     width: 50%;
     text-align: left;
     padding-left: 20%;
 }
+#next, #prev{
+    color: rgba(222, 222, 222, 0.9);
+    margin-top: 25%;
+    font-size: 25pt;
+}
+.dot-collection{
+    text-align: center;
+    margin-top: -5%;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
 
+.active,
+.dot:hover {
+    background-color: #705261
+}
 @media( max-width: 440px){
     .intro_new{
         padding-top: 5%;
@@ -366,6 +395,23 @@ margin-right: 30px;
     .container-intro_new{
         margin-top: 15px;
         z-index: 1;
+    }
+    .pic-slideshow{
+        overflow: hidden;
+        height: 165px;
+    }
+
+    #next, #prev{
+        margin-top: 13%;
+        font-size: 14pt;
+    }  
+    .dot{
+        height: 5px;
+        width: 5px;
+        margin: 0 2px;
+    }  
+    .dot-collection{
+        margin-top: -8%;
     }
 }
 
@@ -416,7 +462,7 @@ margin-right: 30px;
 .button{
     text-decoration: none;
     color: #705261;
-    text-decoration-line: underline;
+    text-decoration-line: none;
 }
 
 .button-carusell{
@@ -424,8 +470,9 @@ margin-right: 30px;
     font-size: 14pt;
     font-weight: lighter;
     color: #705261;
-    border: 0px solid transparent;
-    background-color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
 }
 .button-carusell-collection{
     position: relative;
@@ -442,6 +489,12 @@ margin-right: 30px;
     width: 70px;
     height: 100px;
 }
+@media( max-width: 440px){
+    .button-carusell-collection{
+        margin-bottom: 10%;
+    }
+}
+
 
 .cellm:hover h3{
     transform: scale(0.8);

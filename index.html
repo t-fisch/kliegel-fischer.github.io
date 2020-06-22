@@ -54,74 +54,100 @@
                 }
             </script>
 </div>  
-<!-- 
-    <h1 id="statement-resp"> Ganzheitlich betrachten <br>
-    und Komplementäres verbinden. </h1>
-    <div class="container-intro">
-            <div class="cell cell-1">
-               <div class= "slideshow">
-                    <img class="picture" src="picutres/Roulette_new/01_Haus.jpg">
-                    <img class="picture" src="picutres/Roulette_new/02_rezeption.jpg">
-                    <img class="picture" src="picutres/Roulette_new/03_Warten3.jpg">
-                    <img class="picture" src="picutres/Roulette_new/04_Warten1.jpg">
-                    <img class="picture" src="picutres/Roulette_new/05_Warten2.jpg">
-                    <img class="picture" src="picutres/Roulette_new/06_U2.jpg">   
-                    <img class="picture" src="picutres/Roulette_new/07_Sued.jpg">  
-                    <img class="picture" src="picutres/Roulette_new/08_U1.jpg">
-                    <img class="picture" src="picutres/Roulette_new/09_West.png">
-                    <img class="picture" src="picutres/Roulette_new/10_Ost.png">   
-                    <img class="picture" src="picutres/Roulette_new/11_Door.png">                                                        
-                </div> 
-            </div>
-            <div class="cell cell-2">
-            <div class="intro">
-                <h1 id="statement-pos"> Ganzheitlich bewerten <br>
-                und Komplementäres verbinden. </h1>
-                <br>
-                <p>Kinder, Jugendliche und Erwachsene auf ihrem Lebensweg zu begleiten, ihre Entwicklung zu unterstützen, 
-                sie zu stärken und bei Erkrankungen auf sanfte und gute Art und Weise zu heilen ist unser wichtigstes Ziel. 
-                </p>
-                <br> 
-            </div>
-            </div>
-    </div>
--->
 
-<!-- new frist page -->
-<!-- <div class="title_mobile"> <h3>Praxis Dr. Christa Kliegel Fischer</h3>
-<p>Kinder-und Jugendmedizin • Homöopathie • Akupunktur</p></div> -->
 <div class="container-intro_new"> 
     <div class= "slideshow_new">
-        <img class="picture_new" src="picutres/Roulette_new2/01_haus.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/02_rezeption.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/03_warten.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/04_warten.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/05_warten.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/06_u-sued.jpg">   
-        <img class="picture_new" src="picutres/Roulette_new2/08_sued.jpg">  
-        <img class="picture_new" src="picutres/Roulette_new2/09_west.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/10_u_west.jpg">
-        <img class="picture_new" src="picutres/Roulette_new2/11_west.jpg">   
-        <img class="picture_new" src="picutres/Roulette_new2/12_door.jpg">                                                        
+        <div class="pic-slideshow">
+            <img class="picture_new" src="picutres/Roulette_new2/01_haus.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/02_rezeption.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/03_warten.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/04_warten.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/05_warten.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/06_u-sued.jpg">   
+            <img class="picture_new" src="picutres/Roulette_new2/08_sued.jpg">  
+            <img class="picture_new" src="picutres/Roulette_new2/09_west.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/10_u_west.jpg">
+            <img class="picture_new" src="picutres/Roulette_new2/11_west.jpg">   
+            <img class="picture_new" src="picutres/Roulette_new2/12_door.jpg">        
+
+        <div class="button-carusell-collection">
+            <button class="button-carusell button-left" id="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="button-carusell button-right" id="next" onclick="plusSlides(+1)">&#10095;</button>
+        </div>  
+
+        <div class="dot-collection">
+            <span class="dot" onclick='currentSlide(1)'></span>
+            <span class="dot" onclick='currentSlide(2)'></span>
+            <span class="dot" onclick='currentSlide(3)'></span>
+            <span class="dot" onclick='currentSlide(4)'></span>
+            <span class="dot" onclick='currentSlide(5)'></span>
+            <span class="dot" onclick='currentSlide(6)'></span>
+            <span class="dot" onclick='currentSlide(7)'></span>
+            <span class="dot" onclick='currentSlide(8)'></span>
+            <span class="dot" onclick='currentSlide(9)'></span>
+            <span class="dot" onclick='currentSlide(10)'></span>
+            <span class="dot" onclick='currentSlide(11)'></span>
+          </div>
+        </div>
     </div> 
 </div>
-
-    <!-- JavaScript Code für Slideshow -->
+    <!-- new Slide Show -->
     <script>
-            var myIndex = 0;
-            carousel();
-                    
-            function carousel() {
+
+    var slideIndex = 1;
+    var myTimer;
+    var slideshowContainer;
+
+    window.addEventListener("load",function() {
+        showSlides(slideIndex);
+        myTimer = setInterval(function(){plusSlides(1)}, 3000);
+    })
+
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+    function plusSlides(n){
+        clearInterval(myTimer);
+        if (n < 0){
+            showSlides(slideIndex -= 1);
+        } else {
+            showSlides(slideIndex += 1); 
+        }
+        if (n === -1){
+            myTimer = setInterval(function(){plusSlides(n + 2)}, 3000);
+        } else {
+            myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
+        }
+    }
+
+    function currentSlide(n){
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
+        showSlides(slideIndex = n);
+    }
+
+        function showSlides(n){
             var i;
-            var x = document.getElementsByClassName("picture_new");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
+            var slides = document.getElementsByClassName("picture_new");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000); // Change image every 1,5 seconds
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+        pause = () => {
+            clearInterval(myTimer);
+        }
+
+        resume = () =>{
+            clearInterval(myTimer);
+            myTimer = setInterval(function(){plusSlides(slideIndex)}, 3000);
+        }
     </script>
 
 <div class="intro_new">
