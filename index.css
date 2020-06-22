@@ -353,11 +353,11 @@ margin-right: 30px;
 
 .pic-slideshow{
     overflow: hidden;
-    height: 551px;
+    height: 751px;
 }
 
 .intro_new{
-    padding-top: 40px;
+    margin-top: -60px;
     width: 50%;
     text-align: left;
     padding-left: 20%;
@@ -388,7 +388,7 @@ margin-right: 30px;
 }
 @media( max-width: 440px){
     .intro_new{
-        padding-top: 5%;
+        margin-top: 5%;
         width: 80%;
         padding-left: 50px;
     }
@@ -825,6 +825,11 @@ margin-right: 30px;
 }
 #impressum-title{
     font-size: 15px;
+}
+
+.impressum-weitere{
+    color: rgb(74, 74, 74);
+    font-size: 8pt;
 }
 @media (max-width: 440px){
     .impressum-content{
