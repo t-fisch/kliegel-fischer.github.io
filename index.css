@@ -111,6 +111,7 @@ h4{
     .linkanimation{
         display: none;
     }
+    
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: left;
@@ -131,7 +132,7 @@ h4{
     }
     .navbarresponsive a {
       display: block;
-      text-align: left;
+      text-align: center;
     }
     .linkanimation{
         padding-bottom: 30px;
