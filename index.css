@@ -345,6 +345,7 @@ margin-right: 30px;
 }
 .container-intro_new{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 .slideshow_new{
     position: relative;
@@ -388,7 +389,7 @@ margin-right: 30px;
 }
 @media( max-width: 440px){
     .intro_new{
-        margin-top: 5%;
+        margin-top: -5%;
         width: 80%;
         padding-left: 50px;
     }
@@ -823,7 +824,7 @@ margin-right: 30px;
     margin-top: 10%;
     margin-left: 5%;
 }
-#impressum-title{
+.impressum-title{
     font-size: 15px;
 }
 
