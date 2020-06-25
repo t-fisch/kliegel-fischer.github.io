@@ -7,7 +7,15 @@ body{
     font-family: Poppins;
     line-height: 1.7;
     font-family: 'Poppins';
-    font-size: 13px;
+    font-size: 13pt;
+}
+
+@media (min-width: 1300ox){
+    .body{
+    font-size: 11px;
+    zoom: 1.25; 
+    -moz-transform: scale(1.25); 
+    }
 }
 #screensize{
     display: none;
