@@ -10,7 +10,7 @@ body{
     font-size: 13pt;
 }
 
-@media (min-width: 1300ox){
+@media (min-width: 1500ox){
     .body{
     font-size: 11px;
     zoom: 1.25; 
