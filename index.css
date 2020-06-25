@@ -389,17 +389,18 @@ margin-right: 30px;
 }
 @media( max-width: 440px){
     .intro_new{
-        margin-top: -5%;
+        margin-top: -10%;
         width: 80%;
         padding-left: 50px;
     }
     .container-intro_new{
-        margin-top: 15px;
+        margin-top: 9px;
         z-index: 1;
     }
     .pic-slideshow{
         overflow: hidden;
-        height: 165px;
+
+        height: 200px;
     }
 
     #next, #prev{
@@ -412,9 +413,11 @@ margin-right: 30px;
         margin: 0 2px;
     }  
     .dot-collection{
-        margin-top: -8%;
+        margin-top: -6%;
     }
 }
+
+
 
 /*Methden*/
 #methods{
@@ -838,3 +841,20 @@ margin-right: 30px;
         margin-left: 10%;
     }
 }
+
+/*Iphon 5 Special*/
+
+@media(device-width: 320px){
+    .pic-slideshow{
+        overflow: hidden;
+        width: 100%;
+    }
+    .slideshow_new{
+        width: 110%;
+    }
+    .picture_new{
+        width: 100%;
+    }
+    .button-methode {
+        margin-left: 40px;
+    }
