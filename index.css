@@ -10,13 +10,13 @@ body{
     font-size: 13pt;
 }
 
-@media (min-width: 1500ox){
+/*@media (min-width: 1500ox){
     .body{
     font-size: 11px;
     zoom: 1.25; 
     -moz-transform: scale(1.25); 
     }
-}
+}*/
 #screensize{
     display: none;
 }
