@@ -404,5 +404,25 @@
     <div class="impressum">
         <a class= "impressum-link" href="impressum.html">Impressum</a>
     </div>
+
+    <div id="footer-cookie">
+        <span id="description">
+              Wir nutzen Cookies, um unsere Dienste zu erbringen und zu verbessern. Mit Nutzung dieser Seite akzeptieren Sie Cookies. <a href="index.html">Mehr erfahren</a>
+        </span>
+        <span id="accept"><a href="#" title="Akzeptieren">Akzeptieren</a></span>
+        </div>
+        <script>
+        var footerCookie = document.querySelector("#footer-cookie");
+        var footerCookieAccept = document.querySelector("#accept");
+        if (document.cookie.indexOf("dakitecCookieBanner=") == -1) {
+        footerCookie.style.display = "block";
+        }
+        footerCookieAccept.onclick = function(e) {
+        var cookieDate = new Date();
+        cookieDate.setTime(new Date().getTime() + 31104000000);
+        document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+        footerCookie.style.display = "none";
+        };
+        </script>
 </body>
 </html>
