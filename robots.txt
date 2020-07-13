@@ -4,4 +4,4 @@
 # \
 # Group 2\
 User-agent: *
-Disallow: /
+Allow: /
