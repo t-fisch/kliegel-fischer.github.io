@@ -10,13 +10,6 @@ body{
     font-size: 11pt;
 }
 
-/*@media (min-width: 1500ox){
-    .body{
-    font-size: 11px;
-    zoom: 1.25; 
-    -moz-transform: scale(1.25); 
-    }
-}*/
 #screensize{
     display: none;
 }
@@ -76,6 +69,7 @@ h4{
     width: 100%; 
     background-image: url('header_background.svg'); 
     min-height: 140px;
+    max-height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
