@@ -60,6 +60,9 @@ h4{
     .dot-collection{
         margin-top: -7%;
     }
+    .nav-bck-img{
+        background-image: url('header_background_gerade.svg'); 
+    }
 }
 
 /* Navbar */
@@ -384,7 +387,7 @@ margin-right: 30px;
 }
 .dot-collection{
     text-align: center;
-    margin-top: -5%;
+    margin-top: -7%;
 }
 .dot {
     cursor: pointer;
