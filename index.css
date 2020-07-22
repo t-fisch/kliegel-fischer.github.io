@@ -53,17 +53,6 @@ h4{
     max-width: 2880px;
     margin: auto;
 }
-@media (min-width: 1880px){
-    .text-divider{
-        padding-left: 6%;
-    }
-    .dot-collection{
-        margin-top: -7%;
-    }
-    .nav-bck-img{
-        background-image: url('header_background_gerade.svg'); 
-    }
-}
 
 /* Navbar */
 .nav-bck-img{
@@ -164,6 +153,11 @@ h4{
     }
     #nav-barresponsivehide{
         display: none;
+    }
+}
+@media ( min-width: 1880px){
+    .nav-bck-img{
+        background-image: url('header_background_gerade.svg'); 
     }
 }
 
@@ -286,6 +280,11 @@ h4{
         padding-top: 120px;
     }
 }
+@media ( min-width: 1880px){
+    .text-divider{
+        padding-left: 8%;
+    }
+} 
 
 /*Aktuelles */
 .container-intro{
@@ -380,6 +379,7 @@ margin-right: 30px;
     width: 50%;
     text-align: left;
     padding-left: 20%;
+    margin-top: 40px;
 }
 #next, #prev{
     color: rgba(222, 222, 222, 0.9);
@@ -407,7 +407,7 @@ margin-right: 30px;
 }
 @media( max-width: 440px){
     .intro_new{
-        margin-top: -10%;
+        margin-top: 30px;
         width: 80%;
         padding-left: 50px;
     }
@@ -430,10 +430,14 @@ margin-right: 30px;
         margin: 0 2px;
     }  
     .dot-collection{
-        margin-top: -6%;
+        margin-top: -15%;
     }
 }
-
+@media ( min-width: 1880px){
+    .dot-collection{
+        margin-top: -2%;
+    }
+}
 
 
 /*Methden*/
@@ -748,6 +752,7 @@ margin-right: 30px;
 /*Schuldmedizin*/ 
 .pic-therapie-header{
     margin-top: -5%;
+    width: 100%
 }
 
 .background-therapie-header{
@@ -828,6 +833,15 @@ margin-right: 30px;
         grid-gap: 15px;
     }
 }
+@media ( min-width: 1880px){
+    .pic-therapie-header{
+        margin-top: -2%;
+        max-width: 1880px;
+        display: block;
+        margin: auto;
+    }
+}
+
 
 .impressum{
     margin-top: 10px;
