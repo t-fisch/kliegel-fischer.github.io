@@ -477,7 +477,7 @@ margin-right: 30px;
 }
 
 .pic-meth{
-    padding-top: 20%;
+    padding-top: 25%;
     max-height: 70px;
     transition: ease-in-out all 300ms;
     margin: auto;
@@ -537,9 +537,6 @@ margin-right: 30px;
 
 #pic-weiter{
     width: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 80px;
     padding-bottom: 1px;
 }
 
