@@ -49,6 +49,11 @@ h4{
         font-size: 12px;
     }
 }
+@media ( min-width: 1880px){
+    body{
+        font-size: 16px; 
+    }
+}
 .maxoverall{
     max-width: 2880px;
     margin: auto;
@@ -364,6 +369,7 @@ margin-right: 30px;
 .container-intro_new{
     margin-top: 40px;
     margin-bottom: 20px;
+    padding-top: 2%;
 }
 .slideshow_new{
     position: relative;
@@ -388,7 +394,8 @@ margin-right: 30px;
 }
 .dot-collection{
     text-align: center;
-    margin-top: -7%;
+    margin-top: -5%;
+    position: relative
 }
 .dot {
     cursor: pointer;
@@ -412,8 +419,9 @@ margin-right: 30px;
         padding-left: 50px;
     }
     .container-intro_new{
-        margin-top: 9px;
         z-index: 1;
+        padding-top: 5%;
+        margin-top: -10px;
     }
     .pic-slideshow{
         overflow: hidden;
@@ -472,6 +480,8 @@ margin-right: 30px;
     padding-top: 20%;
     max-height: 70px;
     transition: ease-in-out all 300ms;
+    margin: auto;
+    display: flex;
 }
 
 .cellm:hover img{
@@ -835,10 +845,7 @@ margin-right: 30px;
 }
 @media ( min-width: 1880px){
     .pic-therapie-header{
-        margin-top: -2%;
-        max-width: 1880px;
-        display: block;
-        margin: auto;
+        margin-top: -5%;
     }
 }
 
