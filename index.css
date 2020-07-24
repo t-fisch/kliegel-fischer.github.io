@@ -445,6 +445,10 @@ margin-right: 30px;
     .dot-collection{
         margin-top: -2%;
     }
+    .pic-slideshow{
+        overflow: hidden;
+        max-height: 1200px;
+    }
 }
 
 
