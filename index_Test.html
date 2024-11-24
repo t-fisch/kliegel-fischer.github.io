@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Praxis Dr. med. Christa Kliegel-Fischer | Kinder- und Jugendmedizin, Homöopathie und Akupunktur</title>
+    <meta name = "company" content="Arztpraxis Dr. Christa Kliegel-Fischer">
+    <meta name="page-language" content="de">
+    <meta name="topic" content="Medizin">
+    <meta name="description" content="In der Kinderarztpraxis Dr. Kliegel-Fischer werden.....">
+    <meta name ="keywords" content="Kaiserslautern, Trippstadt, Kinder- und Jugendmedizin, Homöopathie, Akupunktur, Kinderärztin, Praxis, Dr., Kliegel-Fischer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171563369-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171563369-1');
+  ga('set', 'anonymizeIp', true);
+</script></head>
+
+<body>
+
+<div class="logo_mobile_stick">
+    <a class="logo_mobile" href="index.html"><img src="Logo/Logo_mobile_big.png" 
+        style=  "height: auto; 
+                z-index: 4; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px; 
+                width: 90%;"></a>
+</div> 
+ <div class='nav-bck-img'>
+    <a class= "icon" onclick="myFunction()" ><img src ="burgermenue.png" style="width: 30px"></a>  
+            <div class="navbar" id="nav-bar">       
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-Kontakt" id= "nav-kontakt" >Kontakt</a> 
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-team" >Team</a>  
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-oeffnungszeiten" >Sprechstunde</a>
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html#anchor-therapie" >Therapiemethoden</a>
+                    <a class= "linkanimation" onclick="myFunction()" href="index.html" >Aktuelles</a>   
+            </div>
+            <a class="logo_web" href="index.html"><img src="Logo/Logo_web_big.png" style="max-width: 23%; height: auto; margin-top: -80px; z-index: 4;"></a>
+            <p id="screensize"></p>
+            <script>
+                function myFunction() {
+                    var z = screen.width; 
+                    document.getElementById("screensize").innerHTML = z;
+                    console.log(z);
+                    if(z <= 440){
+                    var x = document.getElementById("nav-bar");
+                    if (x.className === "navbar") {
+                        x.className += "responsive";
+                    } else {
+                        x.className = "navbar";
+                    }
+                    }
+                }
+                function onClick() {
+                    var x = document.getElementById("nav-bar");
+                    x.className = "navbar";
+                }
+            </script>
+</div>  
+<div class="maxoverall">
+    <div class="container-intro_new"> 
+        <div class= "slideshow_new">
+            <div class="pic-slideshow">
+                <img class="picture_new" src="picutres/Roulette_new2/01_haus.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/02_rezeption.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/03_warten.jpg">  
+                <img class="picture_new" src="picutres/Roulette_new2/14_Warteraum.jpg">  
+                <img class="picture_new" src="picutres/Roulette_new2/05_warten.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/04_warten.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/06_u-sued.jpg">   
+                <img class="picture_new" src="picutres/Roulette_new2/08_sued.jpg">  
+                <img class="picture_new" src="picutres/Roulette_new2/09_west.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/10_u_west.jpg">
+                <img class="picture_new" src="picutres/Roulette_new2/11_west.jpg">   
+                <img class="picture_new" src="picutres/Roulette_new2/12_door.jpg">        
+
+                <div class="button-carusell-collection">
+                    <button class="button-carusell button-left" id="prev" onclick="plusSlides(-1)">&#10094;</button>
+                    <button class="button-carusell button-right" id="next" onclick="plusSlides(+1)">&#10095;</button>
+                </div>  
+            </div>
+            <div class="dot-collection">
+                <span class="dot" onclick='currentSlide(1)'></span>
+                <span class="dot" onclick='currentSlide(2)'></span>
+                <span class="dot" onclick='currentSlide(3)'></span>
+                <span class="dot" onclick='currentSlide(4)'></span>
+                <span class="dot" onclick='currentSlide(5)'></span>
+                <span class="dot" onclick='currentSlide(6)'></span>
+                <span class="dot" onclick='currentSlide(7)'></span>
+                <span class="dot" onclick='currentSlide(8)'></span>
+                <span class="dot" onclick='currentSlide(9)'></span>
+                <span class="dot" onclick='currentSlide(10)'></span>
+                <span class="dot" onclick='currentSlide(11)'></span>
+                <span class="dot" onclick='currentSlide(12)'></span>
+            </div>
+        </div> 
+    </div>
+        <!-- new Slide Show -->
+        <script>
+
+        var slideIndex = 1;
+        var myTimer;
+        var slideshowContainer;
+
+        window.addEventListener("load",function() {
+            showSlides(slideIndex);
+            myTimer = setInterval(function(){plusSlides(1)}, 3000);
+        })
+
+        slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+
+        function plusSlides(n){
+            clearInterval(myTimer);
+            if (n < 0){
+                showSlides(slideIndex -= 1);
+            } else {
+                showSlides(slideIndex += 1); 
+            }
+            if (n === -1){
+                myTimer = setInterval(function(){plusSlides(n + 2)}, 3000);
+            } else {
+                myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
+            }
+        }
+
+        function currentSlide(n){
+            clearInterval(myTimer);
+            myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
+            showSlides(slideIndex = n);
+        }
+
+            function showSlides(n){
+                var i;
+                var slides = document.getElementsByClassName("picture_new");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+            pause = () => {
+                clearInterval(myTimer);
+            }
+
+            resume = () =>{
+                clearInterval(myTimer);
+                myTimer = setInterval(function(){plusSlides(slideIndex)}, 3000);
+            }
+        </script>
+</div>
+    <div class="intro_new">
+        <p>Kinder, Jugendliche und Erwachsene auf ihrem Lebensweg zu begleiten, ihre Entwicklung zu unterstützen, 
+        sie zu stärken und bei Erkrankungen auf sanfte und gute Art und Weise zu heilen ist unser wichtigstes Ziel. 
+        </p>
+        <br> 
+    </div>
+    <div class="dividerMethod">
+        <h2 class="text-divider" id= "anchor-therapie">Therapiemethoden</h2>
+    </div>
+
+    <div id="methods"> 
+        <p>Mit ganzheitlichem Blick behandeln wir schulmedizinisch fundiert und je nach Bedarf mit komplementärmedizinischen Methoden: 
+            Ohr- und Körperakupunktur, klassische Homöopathie, Ernährung, mikrobiologische Therapie und weitere Methoden </p>
+        <br>
+        <p>Wir orientieren uns an den aktuellen Leitlinien und geben die entsprechenden Medikamente, so viel wie nötig aber so wenig 
+            wie möglich. In vielen Fällen können Lebensenergie und Immunsystem bereits durch Anpassung der Ernährung, Unterstützung 
+            der Darmgesundheit, Elimination von Störfaktoren und Regulierung von Schlaf, Rhythmus und Lebenswandel effektiv unterstützt 
+            werden.
+            <br>
+            Wir wünschen uns für unsere Patienten, dass sie dauerhaft gesund bleiben, nur in Ausnahmefällen medikamentöse oder 
+            chirurgische Behandlung benötigen und ihr Leben voller  Energie gestalten können (Energetische Medizin).</p>
+    </div>
+
+    <div class= 'container-methods'>
+        <div class='cellm cell-schul'> 
+            <a class= "button" href="schulmedizin.html">
+                <img class="pic-meth" src='schul.svg'> 
+                <h3 class="icon-text">Schulmedizin</h3>
+            </a>
+            </div>
+        <div class='cellm cell-aku'>
+            <a class= "button" href="akupunktur.html">
+                <img class="pic-meth" src='aku.svg'>
+                <h3 class="icon-text">Akupunktur</h3>
+            </a>
+            </div>
+        <div class='cellm cell-hom'>
+            <a class= "button" href="homoeopathie.html">
+                <img class="pic-meth" src='hom.svg'>
+                <h3 class="icon-text">Homöopathie</h3>
+            </a>
+            </div>
+        <div class='cellm cell-ern'>
+            <a class= "button" href="ernaerung.html">
+                <img class="pic-meth" src='er.svg'>
+                <h3 class="icon-text">Ernährung</h3>
+            </a>
+            </div>
+        <div class='cellm cell-mik'>
+            <a class= "button" href="mikrobiologie.html">
+                <img class="pic-meth" src='mikro.svg'>
+                <h3 class="icon-text">Mikrobiologie</h3>
+            </a>
+        </div>
+        <div class='cellm cell-wei'>
+            <a class= "button" href="weitereMethoden.html">
+                <img class="pic-meth" id="pic-weiter" src='weiter.svg'>
+                <h3 class="icon-text">Weitere Methoden</h3>
+            </a>
+            </div>
+    </div>
+
+    <div class="resp-methoden">
+        <button class="button-methode"> <a class="resp-btn-methoden" href=schulmedizin.html> <img class="pic-small" src='schul.svg'>Schulmedizin</a></button>
+    </div>
+    <div class="resp-methoden">
+        <button class="button-methode"> <a class="resp-btn-methoden" href=akupunktur.html> <img class="pic-small" src='aku.svg'>Akupunktur</a></button>
+    </div> 
+    <div class="resp-methoden">  
+        <button class="button-methode"> <a class="resp-btn-methoden" href=homoeopathie.html> <img class="pic-small" src='hom.svg'>Homöopathie</a></button>
+    </div>
+    <div class="resp-methoden">
+        <button class="button-methode"> <a class="resp-btn-methoden" href=ernaerung.html> <img class="pic-small" src='er.svg'>Ernährung</a></button>
+    </div> 
+    <div class="resp-methoden">
+        <button class="button-methode"> <a class="resp-btn-methoden" href=mikrobiologie.html> <img class="pic-small" id="mikro-small" src='mikro.svg'>Mikrobiologie</a></button>
+    </div>
+    <div class="resp-methoden">
+        <button class="button-methode"> <a class="resp-btn-methoden" href=weitereMethoden.html> <img class="pic-small" id="weitere-small" 
+            source media="(max-width: 440px)" srcset="weitere_Mobile.svg"> 
+            Weitere Methoden</a></button>
+    </div>
+
+    <div class="dividerSprechstunde">
+            <h2 class="text-divider" id= "anchor-oeffnungszeiten">Sprechstunde</h2>
+    </div>
+
+    <div class= 'container-sprechstunde'>
+        <div class='cellS cell-Montag'>
+            <h4>Montag</h4>
+            <p>Akupunktur u.Ä: 14:00 - 15:00 Uhr</p>
+            <p>Terminsprechstunde: 15:00 - 18:00 Uhr</p>
+            <p>Akutsprechstunde: 18:00 - 19:00 Uhr</p>
+            <p>Klassische Homöopathie: 19:30 - 20:30 Uhr</p>
+        </div>
+        <div class='cellS cell-DiMiFr'>
+            <h4>Dienstag, Freitag</h4>
+            <p>Terminsprechstunde: 8:00 - 11:30 Uhr</p>
+            <p>Akutsprechstunde: 11:30 - 12:30 Uhr</p>
+            <p>Klassische Homöopathie: 13:00 - 14:00 Uhr</p>
+        </div>
+        <div class='cellS cell-Do'>
+            <h4>Donnerstag</h4>
+            <p>Terminsprechstunde: 8:00 - 11:30 Uhr</p>
+            <p>Akutsprechstunde: 11:30 - 12:30Uhr</p>
+            <br>
+            <p>Akupunktur u.Ä: 15:00 - 16:00 Uhr</p>
+            <p>Terminsprechstunde: 16:00 - 18:00 Uhr</p>
+            <p>Akutsprechstunde: 18:00 - 19:00 Uhr</p>
+        </div>
+        <div class='cellS cell-Sa'>
+            <h4>Mittwoch</h4>
+            <p>Terminsprechstunde: 8:00 - 11:30 Uhr</p>
+            <p>Akutsprechstunde: 11:30 - 12:30 Uhr</p>
+            <p>Klassische Homöopathie: 13:00 - 14:00 Uhr</p>
+            <p>Akupunktur u.Ä: 15:00 - 18:30 Uhr</p>
+        </div>
+    </div>
+
+    <div class="sprechstunde-background">
+        <h4 id='terminvereinbarung'>Termine können telefonisch vereinbart werden: <a class="telefonnummer" href="tel:+496306701677">06306-701677</a></h4>
+    </div>
+
+    <div class="button-termin-box">
+    <button class="button-termin" id="button-termin-resp"> <a class="telefonnummer" id="btn-tel" href="tel:+496306701677">  Termin vereinbaren  </a></button>
+    </div>
+
+    <div class="dividerTeam">
+            <h2 class="text-divider" id= "anchor-team">Team</h2>
+    </div>
+
+    <div class= 'container-team'>
+        <div class= 'cellT'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Christa.png'>
+            <h4>Dr. Christa Kliegel-Fischer</h4>
+        </div>
+        <div class= 'cellT'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Anna.png'>
+            <h4>Anna Schlachter</h4>
+        </div>
+        <div class= 'cellT'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Melina.png'>
+            <h4>Melina Gohlke</h4>
+        </div>
+        <div class= 'cellT'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Diana.png'>
+            <h4>Diana Seibert</h4>
+        </div>
+        <div class= 'cellT'>
+            <img class= 'mitarbeiter-pic' src='picutres/Mitarbeiter/Heidi.png'>
+            <h4>Heidi Geiger</h4>
+        </div>
+    </div>
+
+    <div class="team-slideshow">
+        <div class= "slideshow-mitarb">
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Christa.png'>
+                    <h4 class="Subtitle-Mitarb">Dr. Christa Kliegel-Fischer</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Anna.png'>
+                    <h4 class="Subtitle-Mitarb">Anna Schlachter</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Melina.png'>
+                    <h4 class="Subtitle-Mitarb">Melina Gohlke</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Diana.png'>
+                    <h4 class="Subtitle-Mitarb">Diana Seibert</h4>
+                </div>
+
+                <div class=mitarb-Mobile>
+                    <img class="mitarbeiter-pics" src='picutres/Mitarbeiter/Heidi.png'>
+                    <h4 class="Subtitle-Mitarb">Heidi Geiger</h4>
+                </div>
+            <div class="button-carusell-collection">
+            <button class="button-carusell button-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button-carusell button-right" onclick="plusDivs(+1)">&#10095;</button>
+            </div>  
+        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mitarb-Mobile");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </div>
+    
+
+    <div class="dividerKontakt">
+            <h2 class="text-divider" id= "anchor-Kontakt">Kontakt</h2>
+    </div>
+
+    <div class= 'container-kontakt'>
+        <div class= 'cellK'>
+            <h4>Anfahrt</h4>
+
+            <p>Praxis Dr. Christa Kliegel-Fischer</p>
+            <p>Hauptstraße 54</p>
+            <p>67705 Trippstadt</p>
+        </div>
+        <div class= 'cellK cellTermin'>
+            <h4>Terminvergabe</h4>
+
+            <a class="telefonnummer" href="tel:+496306701677">06306-701677</a>
+        </div>
+    </div>
+    <div class="maps">
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                var setting = {"height":500,"width":1748.4,"zoom":15,"queryString":"Hauptstraße 54, Trippstadt, Deutschland","place_id":"ChIJu5o4y9JtlkcRAp7ZBx21tlY","satellite":false,"centerCoord":[49.35707231849979,7.7715967999999975],"cid":"0x56b6b51d07d99e02","cityUrl":"/germany/trippstadt-104317","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"100317"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=100317';
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+              })();</script><a href="https://1map.com/map-embed?embed_id=100317">1map.com</a>
+              </div>
+    </div>
+    <div class="impressum">
+        <a class= "impressum-link" href="impressum.html">Impressum</a>
+    </div>
+
+    <div id="footer-cookie">
+        <span id="description">
+              Wir nutzen Cookies, um unsere Dienste zu erbringen und zu verbessern. Mit Nutzung dieser Seite akzeptieren Sie Cookies. <a href="index.html">Mehr erfahren</a>
+        </span>
+        <span id="accept"><a href="#" title="Akzeptieren">Akzeptieren</a></span>
+        </div>
+        <script>
+        var footerCookie = document.querySelector("#footer-cookie");
+        var footerCookieAccept = document.querySelector("#accept");
+        if (document.cookie.indexOf("dakitecCookieBanner=") == -1) {
+        footerCookie.style.display = "block";
+        }
+        footerCookieAccept.onclick = function(e) {
+        var cookieDate = new Date();
+        cookieDate.setTime(new Date().getTime() + 31104000000);
+        document.cookie = "dakitecCookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+        footerCookie.style.display = "none";
+        };
+        </script>
+</body>
+</html>
